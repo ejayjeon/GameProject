@@ -34,7 +34,7 @@ public class JBeat extends JFrame{
 		introImage = new ImageIcon(Main.class.getResource("../../images/intro.jpg")).getImage();
 		
 		// 뮤직 실행 (쓰레드)
-		Music introMusic = new Music("ETA.mp3", true);
+		Music introMusic = new Music("ditto.mp3", true);
 		introMusic.start();
 	}
 	

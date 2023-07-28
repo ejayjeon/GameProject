@@ -4,9 +4,8 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 
-import com.sun.tools.javac.Main;
-
 import javazoom.jl.player.Player;
+import v1.run.Main;
 
 
 
@@ -22,7 +21,7 @@ public class Music extends Thread {
 	public Music(String name, boolean isLoop) {
 		try {
 			this.isLoop = isLoop;
-			file = new File(Main.class.getResource("../../music/" + name).toURI());
+			file = new File(Main.class.getResource("../../musics/" + name).toURI());
 			fis = new FileInputStream(file);
 			bis = new BufferedInputStream(fis);
 			player = new Player(bis);
